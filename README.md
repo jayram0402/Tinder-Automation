@@ -1,10 +1,7 @@
 # Tinder-Automation
 Developed an AI-powered Dating app with a Spring Boot backend, featuring AI-driven swiping, matching, profile creation, image generation, and conversation automation, with a React frontend.
 
-Here’s a comprehensive **README.md** file that covers the entire setup for GitHub, including both the backend and frontend, along with deployment instructions:
-
-```md
-# AI-Powered Dating App
+## AI-Powered Dating App
 
 This repository contains the source code for an AI-powered dating application with an AI-driven swiping system, matching algorithm, profile creation, image generation, and automated conversation management. The backend is built using **Spring Boot**, and the frontend uses **React**.
 
@@ -40,7 +37,7 @@ This repository contains the source code for an AI-powered dating application wi
 
 Ensure that you have the following installed:
 
-- **Java 11+** and **Maven** for backend development
+- **Java 11+** for backend development
 - **Node.js** and **npm** for frontend development
 - **MongoDB** (local or cloud instance)
 - **Docker** (if using containerization)
@@ -52,8 +49,8 @@ Ensure that you have the following installed:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/ai-powered-dating-app.git
-   cd ai-powered-dating-app/backend
+   git clone https://github.com/jayram0402/Tinder-Automation.git
+   cd Tinder-Automation/
    ```
 
 2. **Configure MongoDB**:
@@ -63,15 +60,15 @@ Ensure that you have the following installed:
    ```
 
 3. **Build the Backend**:
-   Run the following Maven command to build the backend:
+   Run the following command to build the backend using Maven Wrapper:
    ```bash
-   mvn clean install
+   ./mvnw clean install
    ```
 
 4. **Run the Application**:
    Start the Spring Boot application:
    ```bash
-   mvn spring-boot:run
+   ./mvnw spring-boot:run
    ```
 
 5. **Swagger API Documentation**:
@@ -164,7 +161,7 @@ You can interact with these endpoints directly or use the **Swagger UI** for tes
 
 To deploy the backend on an **AWS EC2** instance:
 
-1. Launch an EC2 instance with Java and Maven installed.
+1. Launch an EC2 instance with Java installed.
 2. Pull your code from GitHub, build, and run the backend.
 3. Set up a security group to allow traffic on port **8080**.
 
@@ -184,13 +181,5 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for m
 
 We welcome contributions! Feel free to submit issues and pull requests for bug fixes, features, and improvements.
 
-```
+ 
 
-### Key Highlights:
-1. **Backend**: Spring Boot setup with MongoDB, Docker, and deployment instructions.
-2. **Frontend**: React app setup and Docker configuration.
-3. **Cloud and CI/CD**: Integration with Jenkins, AWS, Ansible, and Terraform.
-4. **Database**: MongoDB configuration and usage.
-5. **API Documentation**: Brief description of available API endpoints. 
-
-This **README.md** file provides all the necessary information for setting up and deploying the AI-powered dating app.
